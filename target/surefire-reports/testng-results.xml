@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-15T15:12:24 IST" name="Suite" finished-at="2023-12-15T15:12:31 IST" duration-ms="6946">
+    <groups>
+    </groups>
+    <test started-at="2023-12-15T15:12:24 IST" name="Test" finished-at="2023-12-15T15:12:31 IST" duration-ms="6946">
+      <class name="com.restA.GetresponseDemo">
+        <test-method signature="test1()[pri:0, instance:com.restA.GetresponseDemo@4690b489]" started-at="2023-12-15T15:12:24 IST" name="test1" finished-at="2023-12-15T15:12:31 IST" duration-ms="6887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.restA.GetresponseDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
