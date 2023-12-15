@@ -58,7 +58,8 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.7.1</version>
-     <scope>compile</scope>
+         <scope>test</scope>
+
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
