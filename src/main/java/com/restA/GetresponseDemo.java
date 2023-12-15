@@ -41,7 +41,7 @@ public class GetresponseDemo {
 		System.out.println("fundhouse Body is: " + date);
 		System.out.println("fundhouse Body is: " + nav);
 		
-		FileInputStream fis= new FileInputStream("D:\\Projects\\RestAssuredProj\\ExcelData\\Portfolio.xlsx");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir") +"\\ExcelData\\Portfolio.xlsx");
 		
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet=workbook.getSheetAt(sheetindex);
@@ -53,7 +53,7 @@ public class GetresponseDemo {
 	        rowHeading.createCell(0).setCellValue(date);
 	        rowHeading.createCell(1).setCellValue(nav);
 	        
-	        FileOutputStream out = new FileOutputStream("D:\\Projects\\RestAssuredProj\\ExcelData\\Portfolio.xlsx");
+	        FileOutputStream out = new FileOutputStream(System.getProperty("user.dir") +"\\ExcelData\\Portfolio.xlsx");
 	        workbook.write(out);
 	        out.flush();
 	        out.close();
