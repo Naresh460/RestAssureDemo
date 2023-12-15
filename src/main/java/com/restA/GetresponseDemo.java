@@ -18,7 +18,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class GetresponseDemo {
 	
-	public static void main(String[] args) throws IOException {
+	@Test
+	public static void test1() throws IOException {
 		getResponsemethod("/148703/latest",0, "UTI Nifty 200");
 		getResponsemethod("/143903/latest",1,"ICICI Bharat");
 		getResponsemethod("/120828/latest",2,"Quant Small Cap");
