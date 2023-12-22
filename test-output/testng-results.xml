@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T14:19:00 IST" name="Suite" finished-at="2023-12-18T14:19:12 IST" duration-ms="12025">
+  <suite started-at="2023-12-22T16:44:05 IST" name="Default suite" finished-at="2023-12-22T16:45:55 IST" duration-ms="110455">
     <groups>
     </groups>
-    <test started-at="2023-12-18T14:19:00 IST" name="Test" finished-at="2023-12-18T14:19:12 IST" duration-ms="12025">
-      <class name="com.restA.GoogleMFAPI">
-        <test-method signature="mainTest()[pri:0, instance:com.restA.GoogleMFAPI@3a44431a]" started-at="2023-12-18T14:19:00 IST" name="mainTest" finished-at="2023-12-18T14:19:12 IST" duration-ms="11961" status="PASS">
+    <test started-at="2023-12-22T16:44:05 IST" name="Default test" finished-at="2023-12-22T16:45:55 IST" duration-ms="110455">
+      <class name="com.restA.GooglleoneyControl">
+        <test-method signature="mainTest()[pri:0, instance:com.restA.GooglleoneyControl@5b1669c0]" started-at="2023-12-22T16:44:05 IST" name="mainTest" finished-at="2023-12-22T16:45:55 IST" duration-ms="110411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainTest -->
-      </class> <!-- com.restA.GoogleMFAPI -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.restA.GooglleoneyControl -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -39,7 +39,11 @@
     <artifactId>google-api-client</artifactId>
     <version>1.17.0-rc</version>
 </dependency>
-
+<dependency>
+  <groupId>com.webencyclop.core</groupId>
+  <artifactId>mftool-java</artifactId>
+  <version>1.0.4</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/com.google.auth/google-auth-library-credentials -->
 <dependency>
     <groupId>com.google.auth</groupId>
@@ -135,7 +139,18 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.14.0</version>
 		</dependency>
-
+<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.11.0</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-manager -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-manager</artifactId>
+			<version>4.11.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
