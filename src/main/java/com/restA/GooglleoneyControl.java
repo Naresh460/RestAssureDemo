@@ -42,8 +42,14 @@ public class GooglleoneyControl {
 		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/uti-nifty200-momentum-30-index-fund-direct-plan-growth/MUT3614","UTI Nifty 200",spreadsheetId, "UTI");
 		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/icici-prudential-bharat-22-fof-direct-plan-growth/MPI3793","ICICI Bharat", spreadsheetId, "ICICI");
 		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/quant-small-cap-fund-direct-plan-growth/MES056","Quant Small Cap", spreadsheetId, "QUANT");
-		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/sbi-nifty-smallcap-250-index-fund-regular-plan-growth/MSB1869","SBI ", spreadsheetId, "SBI");
-		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/icici-prudential-smallcap-fund-direct-plan-growth/MPI1146","ICICI Small Cap", spreadsheetId, "ICICI SMALL");
+		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/sbi-nifty-smallcap-250-index-fund-direct-plan-growth/MSB1871","SBI ", spreadsheetId, "SBI");
+		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/icici-prudential-smallcap-fund-direct-plan-growth/MPI1146","ICICI Small Cap", spreadsheetId, "ICICISMALL");
+		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/sbi-small-cap-fund-direct-plan-growth/MSA031","SBI Small Cap", spreadsheetId, "SBISMALL");
+		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/hdfc-small-cap-fund-direct-plan-growth/MMS025","Hdfc Small Cap", spreadsheetId, "HDFC");
+		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/quant-tax-plan-direct-plan-growth/MES037","QuantTAx Small Cap", spreadsheetId, "QuantTax");
+
+	
+	
 	}
 
 	public static void getResponsemethod(String url, String mfNmae, String spreadsheetId, String sheetName)
@@ -64,7 +70,8 @@ public class GooglleoneyControl {
 		
 		String date = driver.findElement(By.xpath("//div[@class='leftblok']/span[@class='amt']/following-sibling::div")).getText()
 				.replaceFirst("\\W", "").trim();
-
+		
+		System.out.println("fundhouse name is: " + mfNmae);
 		System.out.println("fundhouse Body is: " + date);
 		System.out.println("fundhouse Body is: " + nav);
 
