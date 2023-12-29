@@ -48,8 +48,6 @@ public class GooglleoneyControl {
 		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/hdfc-small-cap-fund-direct-plan-growth/MMS025","Hdfc Small Cap", spreadsheetId, "HDFC");
 		getResponsemethod("https://www.moneycontrol.com/mutual-funds/nav/quant-tax-plan-direct-plan-growth/MES037","QuantTAx Small Cap", spreadsheetId, "QuantTax");
 
-	
-	
 	}
 
 	public static void getResponsemethod(String url, String mfNmae, String spreadsheetId, String sheetName)
@@ -61,6 +59,8 @@ public class GooglleoneyControl {
 		
 		driver.get(url);
 		Thread.sleep(3000);
+		System.out.println("***Driver Opend*****");
+
 		
 		String nav = driver.findElement(By.xpath("//div[@class='leftblok']/span[@class='amt']")).getText()
 				.replaceFirst("\\W", "").trim();
@@ -97,6 +97,7 @@ public class GooglleoneyControl {
 		}
 		
 		driver.quit();
+		System.out.println("***Driver Closed*****");
 	}
 
 	private static int getLastDataRow(String spreadsheetId, String sheetName) throws IOException {

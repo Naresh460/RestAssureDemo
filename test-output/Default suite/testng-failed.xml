@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restA.CopyGetresponseDemo">
+      <class name="com.restA.GoogleMFAPI">
         <methods>
-          <include name="test1"/>
+          <include name="mainTest"/>
         </methods>
-      </class> <!-- com.restA.CopyGetresponseDemo -->
+      </class> <!-- com.restA.GoogleMFAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

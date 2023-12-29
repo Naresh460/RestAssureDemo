@@ -35,7 +35,7 @@ public class GoogleMFAPI {
 	@Test
 	public static void mainTest() throws IOException {
 
-		String spreadsheetId = "1PiUPE5XaN83h6W14jjTN0QpJzA2J3SN8OQXnrb5V11E";
+		String spreadsheetId = "1KPDyKcKZXmvbIWE2NiWA0mI-tCAYWVMQc2P5RDzZzEw";
 		String sheetName = "Sheet1"; // Update with your sheet name
 
 		GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("credentials.json"))
@@ -48,8 +48,13 @@ public class GoogleMFAPI {
 		getResponsemethod("/148703/latest", "UTI Nifty 200", spreadsheetId, "UTI");
 		getResponsemethod("/143903/latest", "ICICI Bharat", spreadsheetId, "ICICI");
 		getResponsemethod("/120828/latest", "Quant Small Cap", spreadsheetId, "QUANT");
-		getResponsemethod("/150679/latest", "SBI ", spreadsheetId, "SBI");
-		getResponsemethod("/120591/latest", "ICICI Small Cap", spreadsheetId, "ICICI SMALL");
+		getResponsemethod("/150678/latest", "SBI ", spreadsheetId, "SBI");
+		getResponsemethod("/120591/latest", "ICICI Small Cap", spreadsheetId, "ICICISMALL");
+		getResponsemethod("/125497/latest", "SBI Small ", spreadsheetId, "SBISMALL");
+		getResponsemethod("/130503/latest", "HDFC ", spreadsheetId, "HDFC");
+		getResponsemethod("/120847/latest", "QuantTax ", spreadsheetId, "QuantTax");
+
+		
 	}
 
 	public static void getResponsemethod(String url, String mfNmae, String spreadsheetId, String sheetName)
