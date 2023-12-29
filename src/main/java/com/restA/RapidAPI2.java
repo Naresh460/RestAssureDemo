@@ -36,7 +36,7 @@ public class RapidAPI2 {
 	public static void mainTest() throws IOException, InterruptedException {
 
 		String spreadsheetId = "1KPDyKcKZXmvbIWE2NiWA0mI-tCAYWVMQc2P5RDzZzEw";
-		String sheetName = "Sheet1"; // Update with your sheet name
+		//String sheetName = "Sheet1"; // Update with your sheet name
 
 		GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("credentials.json"))
 				.createScoped(Collections.singleton(SheetsScopes.SPREADSHEETS));
