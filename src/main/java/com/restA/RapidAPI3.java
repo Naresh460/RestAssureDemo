@@ -79,6 +79,7 @@ static String date;
 		System.out.println("fundhouse Body is: " + netAssetValue);
 		System.out.println("fundhouse date is: " + datestring);
 		System.out.println("length-->"+datelength);
+		getLastDataRow(spreadsheetId, sheetName);
 		
              if (!lastValueString.equals(datestring)) {	
             	 
