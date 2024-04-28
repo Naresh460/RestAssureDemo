@@ -43,16 +43,17 @@ static String date;
 		sheetsService = new Sheets.Builder(new NetHttpTransport(), GsonFactory.getDefaultInstance(),
 				new HttpCredentialsAdapter(credentials)).setApplicationName("Portfolio").build();
 
-		getResponsemethod("148703", "UTI Nifty 200", spreadsheetId, "UTI");
-		getResponsemethod("143903", "ICICI Bharat", spreadsheetId, "ICICI");
-		getResponsemethod("120828", "Quant Small Cap", spreadsheetId, "QUANT");
-		getResponsemethod("150678", "SBI ", spreadsheetId, "SBI");
-		getResponsemethod("120591", "ICICI Small Cap", spreadsheetId, "ICICISMALL");
-		getResponsemethod("125497", "SBI Small ", spreadsheetId, "SBISMALL");
-		getResponsemethod("130503", "HDFC ", spreadsheetId, "HDFC");
-		getResponsemethod("120847", "QuantTax ", spreadsheetId, "QuantTax");
-		getResponsemethod("151739", "UTI500 ", spreadsheetId, "UTI500");		
-		getResponsemethod("149288", "HDFCNext50 ", spreadsheetId, "HDFCNext50");
+//		getResponsemethod("148703", "UTI Nifty 200", spreadsheetId, "UTI");
+//		getResponsemethod("143903", "ICICI Bharat", spreadsheetId, "ICICI");
+//		getResponsemethod("120828", "Quant Small Cap", spreadsheetId, "QUANT");
+//		getResponsemethod("150678", "SBI ", spreadsheetId, "SBI");
+//		getResponsemethod("120591", "ICICI Small Cap", spreadsheetId, "ICICISMALL");
+//		getResponsemethod("125497", "SBI Small ", spreadsheetId, "SBISMALL");
+//		getResponsemethod("130503", "HDFC ", spreadsheetId, "HDFC");
+//		getResponsemethod("120847", "QuantTax ", spreadsheetId, "QuantTax");
+//		getResponsemethod("151739", "UTI500 ", spreadsheetId, "UTI500");		
+//	getResponsemethod("149288", "HDFCNext50 ", spreadsheetId, "HDFCNext50");
+		getResponsemethod("149894", "Axis ", spreadsheetId, "Axis");
 		
 
 		
@@ -63,7 +64,7 @@ static String date;
 
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("https://latest-mutual-fund-nav.p.rapidapi.com/fetchLatestNAV?SchemeCode="+url+""))
-				.header("X-RapidAPI-Key", "977753f462mshf2f6053ba578acfp103b1fjsn412332277c0c")
+				.header("X-RapidAPI-Key", "696115166amsh062c2425e35d1afp1b68aajsnd513f6334923")
 				.header("X-RapidAPI-Host", "latest-mutual-fund-nav.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
