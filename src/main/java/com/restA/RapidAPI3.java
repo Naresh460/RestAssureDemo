@@ -9,6 +9,9 @@ import java.net.http.HttpResponse;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 
 import org.testng.annotations.Test;
 
@@ -63,16 +66,22 @@ static String date;
 			throws IOException, InterruptedException {
 
 		HttpRequest request = HttpRequest.newBuilder()
-				.uri(URI.create("https://latest-mutual-fund-nav.p.rapidapi.com/fetchLatestNAV?SchemeCode="+url+""))
+				.uri(URI.create("https://latest-mutual-fund-nav.p.rapidapi.com/latest?Scheme_Type=Open&Scheme_Code="+url+""))
 				.header("X-RapidAPI-Key", "696115166amsh062c2425e35d1afp1b68aajsnd513f6334923")
 				.header("X-RapidAPI-Host", "latest-mutual-fund-nav.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
 		HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
 		String bodyy=response.body();
-		System.out.println(response.body());
 		
-		String netAssetValue = JsonPath.read(bodyy, "$[0]['Net Asset Value']");
+		JSONArray jsonArray = new JSONArray(bodyy);
+		JSONObject jsonObject = jsonArray.getJSONObject(0);
+		double netAssetValue = jsonObject.getDouble("Net_Asset_Value");
+		
+		
+		System.out.println(netAssetValue);
+
+		
 		date = JsonPath.read(bodyy, "$[0]['Date']");
 		String datestring=date.replaceAll("\\s", "");
 		int datelength=datestring.length();

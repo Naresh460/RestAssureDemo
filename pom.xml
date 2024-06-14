@@ -39,6 +39,12 @@
     <artifactId>google-api-client</artifactId>
     <version>1.17.0-rc</version>
 </dependency>
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20210307</version>
+</dependency>
+
 
 <dependency>
     <groupId>com.google.auth</groupId>
