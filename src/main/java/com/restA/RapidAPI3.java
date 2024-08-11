@@ -51,7 +51,7 @@ static String date;
 		getResponsemethod("120828", "Quant Small Cap", spreadsheetId, "QUANT");
 		getResponsemethod("150678", "SBI ", spreadsheetId, "SBI");
 		getResponsemethod("120591", "ICICI Small Cap", spreadsheetId, "ICICISMALL");
-		getResponsemethod("125497", "SBI Small ", spreadsheetId, "SBISMALL");
+		getResponsemethod("152365", "ICICI NEXT ", spreadsheetId, "ICICINEXT");
 		getResponsemethod("130503", "HDFC ", spreadsheetId, "HDFC");
 		getResponsemethod("120847", "QuantTax ", spreadsheetId, "QuantTax");
 		getResponsemethod("151739", "UTI500 ", spreadsheetId, "UTI500");		
